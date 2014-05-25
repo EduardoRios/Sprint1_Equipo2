@@ -20,7 +20,7 @@ namespace Krisa.ControlUsuarios
         /// Metodo para agregar un usuario a la Base de Datos
         /// </summary>
         /// <param name="usuario"></param>
-        public void AgregarUsuario(Usuario usuario)
+        public bool AgregarUsuario(Usuario usuario)
         {
             if (VerificarUsuario(usuario))
             {
@@ -31,8 +31,9 @@ namespace Krisa.ControlUsuarios
                     db.Usuarios.Add(usuario);
                     db.SaveChanges();
                     db.Dispose();
+                    return true;
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     throw new Exception("Error de conexion en la Base de Datos");
                 }
@@ -48,23 +49,24 @@ namespace Krisa.ControlUsuarios
         /// </summary>
         /// <param name="usuario"></param>
         /// <param name="nuevoPass"></param>
-        public void ModificarUsuario(Usuario usuario, string nuevaContrasena)
-        {
+        public bool ModificarUsuario(Usuario usuario, string nuevaContrasena)
+        {   
+            string ContrasenaEncriptada = Encriptar(usuario.Contrasena);
+            usuario.Contrasena = ContrasenaEncriptada;
             if (ValidarContrasena(usuario.Contrasena))
             {
-                string nuevaContrasenaEncriptada = Encriptar(nuevaContrasena);
-                string ContrasenaEncriptada = Encriptar(usuario.Contrasena);
-                usuario.Contrasena = ContrasenaEncriptada;
                 try
                 {
+                    string nuevaContrasenaEncriptada = Encriptar(nuevaContrasena);
                     var cambio = from user in db.Usuarios where user.Nombre == usuario.Nombre select user;
-                    cambio.First().Contrasena = nuevaContrasena;
+                    cambio.First().Contrasena = nuevaContrasenaEncriptada;
                     db.SaveChanges();
                     db.Dispose();
+                    return true;
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
-                    throw new Exception("Error de conexion en la Base de Datos");
+                    throw new Exception("Error de conexion en la Base de Datos");   
                 }
             }
             else
@@ -106,7 +108,7 @@ namespace Krisa.ControlUsuarios
                 var resultado = from user in db.Usuarios where user.Contrasena == contrasena select user;
                 return resultado.Count<Usuario>() == 0 ? false : true;
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 throw new Exception("Error de conexion en la Base de Datos");
             }
@@ -124,7 +126,7 @@ namespace Krisa.ControlUsuarios
                 var resultado = from user in db.Usuarios where user.Nombre == usuario.Nombre select user;
                 return resultado.Count<Usuario>() == 0 ? true : false;
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 throw new Exception("Error de conexion en la Base de Datos");
             }

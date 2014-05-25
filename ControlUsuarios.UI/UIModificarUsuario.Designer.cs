@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UIModificarUsuario));
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.gbxDatosUsuario = new System.Windows.Forms.GroupBox();
@@ -50,18 +51,19 @@
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancelar.Location = new System.Drawing.Point(321, 327);
+            this.btnCancelar.Location = new System.Drawing.Point(334, 300);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(85, 36);
             this.btnCancelar.TabIndex = 19;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
             // 
             // btnModificar
             // 
             this.btnModificar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModificar.Location = new System.Drawing.Point(153, 327);
+            this.btnModificar.Location = new System.Drawing.Point(141, 300);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(85, 36);
@@ -69,6 +71,7 @@
             this.btnModificar.Text = "Modificar";
             this.btnModificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click_1);
             // 
             // gbxDatosUsuario
             // 
@@ -81,9 +84,9 @@
             this.gbxDatosUsuario.Controls.Add(this.txtPass);
             this.gbxDatosUsuario.Controls.Add(this.Label1);
             this.gbxDatosUsuario.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxDatosUsuario.Location = new System.Drawing.Point(150, 39);
+            this.gbxDatosUsuario.Location = new System.Drawing.Point(138, 12);
             this.gbxDatosUsuario.Name = "gbxDatosUsuario";
-            this.gbxDatosUsuario.Size = new System.Drawing.Size(258, 281);
+            this.gbxDatosUsuario.Size = new System.Drawing.Size(282, 281);
             this.gbxDatosUsuario.TabIndex = 21;
             this.gbxDatosUsuario.TabStop = false;
             this.gbxDatosUsuario.Text = "Modificar Contraseña";
@@ -108,6 +111,7 @@
             this.txtConfirmar.Size = new System.Drawing.Size(232, 25);
             this.txtConfirmar.TabIndex = 4;
             this.txtConfirmar.UseSystemPasswordChar = true;
+            this.txtConfirmar.Validating += new System.ComponentModel.CancelEventHandler(this.txtConfirmar_Validating_1);
             // 
             // txtUsuario
             // 
@@ -149,6 +153,7 @@
             this.txtNuevoPass.Size = new System.Drawing.Size(232, 25);
             this.txtNuevoPass.TabIndex = 3;
             this.txtNuevoPass.UseSystemPasswordChar = true;
+            this.txtNuevoPass.Validating += new System.ComponentModel.CancelEventHandler(this.txtNuevoPass_Validating_1);
             // 
             // txtPass
             // 
@@ -159,6 +164,7 @@
             this.txtPass.Size = new System.Drawing.Size(232, 25);
             this.txtPass.TabIndex = 2;
             this.txtPass.UseSystemPasswordChar = true;
+            this.txtPass.Validating += new System.ComponentModel.CancelEventHandler(this.txtPass_Validating_1);
             // 
             // Label1
             // 
@@ -174,7 +180,8 @@
             // pbxImagen
             // 
             this.pbxImagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbxImagen.Location = new System.Drawing.Point(25, 39);
+            this.pbxImagen.Image = ((System.Drawing.Image)(resources.GetObject("pbxImagen.Image")));
+            this.pbxImagen.Location = new System.Drawing.Point(13, 12);
             this.pbxImagen.Name = "pbxImagen";
             this.pbxImagen.Size = new System.Drawing.Size(119, 117);
             this.pbxImagen.TabIndex = 20;
@@ -188,13 +195,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(432, 402);
+            this.ClientSize = new System.Drawing.Size(432, 353);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.gbxDatosUsuario);
             this.Controls.Add(this.pbxImagen);
             this.Name = "UIModificarUsuario";
-            this.Text = "Form1";
+            this.Text = "Modificar Contraseña";
             this.gbxDatosUsuario.ResumeLayout(false);
             this.gbxDatosUsuario.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagen)).EndInit();

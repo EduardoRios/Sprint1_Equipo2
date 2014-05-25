@@ -20,6 +20,7 @@ namespace Krisa.ControlUsuarios.UI
         {
             InitializeComponent();
             gestorUsuario = new GestorUsuario();
+            txtUsuario.Select();
         }
 
         /// <summary>
@@ -27,7 +28,7 @@ namespace Krisa.ControlUsuarios.UI
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btnGuardar_Click(object sender, EventArgs e)
+        private void btnGuardar_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -37,12 +38,15 @@ namespace Krisa.ControlUsuarios.UI
                 usuario.Contrasena = txtPass.Text;
                 usuario.Activo = true;
 
-                gestorUsuario.AgregarUsuario(usuario);
+                if (gestorUsuario.AgregarUsuario(usuario))
+                {
+                    txtUsuario.Text = "";
+                    txtNombreCompleto.Text = "";
+                    txtPass.Text = "";
+                    txtPassConfirmacion.Text = "";
 
-                txtUsuario.Text = "";
-                txtNombreCompleto.Text = "";
-                txtPass.Text = "";
-                txtPassConfirmacion.Text = "";
+                    MessageBox.Show("El usuario se ha agregado con exito");
+                }
             }
             catch (Exception ex)
             {
@@ -55,7 +59,7 @@ namespace Krisa.ControlUsuarios.UI
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void btnCancelar_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
@@ -65,38 +69,39 @@ namespace Krisa.ControlUsuarios.UI
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void txtUsuario_Validating(object sender, CancelEventArgs e)
+        private void txtUsuario_Validating_1(object sender, CancelEventArgs e)
         {
             if (txtUsuario.Text.Trim() == "")
             {
                 errorCrearUsuario.SetError(txtUsuario, "Valor no puede ser nulo");
                 txtUsuario.BackColor = Color.LightSkyBlue;
-                e.Cancel = true;
+                e.Cancel = false;
                 return;
             }
             errorCrearUsuario.Clear();
             txtUsuario.BackColor = Color.White;
         }
 
+
         /// <summary>
         /// Validacion de campo vacio y que acepte solo letras del Nombre Completo
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void txtNombreCompleto_Validating(object sender, CancelEventArgs e)
+        private void txtNombreCompleto_Validating_1(object sender, CancelEventArgs e)
         {
             if (txtNombreCompleto.Text.Trim() == "")
             {
                 errorCrearUsuario.SetError(txtNombreCompleto, "Valor no puede ser nulo");
                 txtNombreCompleto.BackColor = Color.LightSkyBlue;
-                e.Cancel = true;
+                e.Cancel = false;
                 return;
             }
             if (Regex.IsMatch(txtNombreCompleto.Text, "[0-9]"))
             {
                 errorCrearUsuario.SetError(txtNombreCompleto, "No se pueden ingresar Numeros");
                 txtNombreCompleto.BackColor = Color.LightSkyBlue;
-                e.Cancel = true;
+                e.Cancel = false;
                 return;
             }
             errorCrearUsuario.Clear();
@@ -104,53 +109,53 @@ namespace Krisa.ControlUsuarios.UI
         }
 
         /// <summary>
-        /// Validacion de la confirmacion de la contraseña. Campo no vacio.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void txtPassConfirmacion_Validating(object sender, CancelEventArgs e)
-        {
-            if (txtPassConfirmacion.Text.Trim() == "")
-            {
-                errorCrearUsuario.SetError(txtPassConfirmacion, "Valor no puede ser nulo");
-                txtPassConfirmacion.BackColor = Color.LightSkyBlue;
-                e.Cancel = true;
-                return;
-            }
-            if (txtPass.Text != txtPassConfirmacion.Text)
-            {
-                errorCrearUsuario.SetError(txtPassConfirmacion, "La contraseña no coincide");
-                txtPassConfirmacion.BackColor = Color.LightSkyBlue;
-                e.Cancel = true;
-                return;
-            }
-            errorCrearUsuario.Clear();
-            txtPassConfirmacion.BackColor = Color.White;
-        }
-
-        /// <summary>
         /// Validacion de la contraseña no vacio. Longitud minima de 8 caracteres.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void txtPass_Validating(object sender, CancelEventArgs e)
+        private void txtPass_Validating_1(object sender, CancelEventArgs e)
         {
             if (txtPass.Text.Trim() == "")
             {
                 errorCrearUsuario.SetError(txtPass, "Valor no puede ser nulo");
                 txtPass.BackColor = Color.LightSkyBlue;
-                e.Cancel = true;
+                e.Cancel = false;
                 return;
             }
             if (txtPass.Text.Length < 8)
             {
                 errorCrearUsuario.SetError(txtPass, "La longitud minima es de 8 caracteres");
                 txtPass.BackColor = Color.LightSkyBlue;
-                e.Cancel = true;
+                e.Cancel = false;
                 return;
             }
             errorCrearUsuario.Clear();
             txtPass.BackColor = Color.White;
+        }
+
+        /// <summary>
+        /// Validacion de la confirmacion de la contraseña. Campo no vacio.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtPassConfirmacion_Validating_1(object sender, CancelEventArgs e)
+        {
+            if (txtPassConfirmacion.Text.Trim() == "")
+            {
+                errorCrearUsuario.SetError(txtPassConfirmacion, "Valor no puede ser nulo");
+                txtPassConfirmacion.BackColor = Color.LightSkyBlue;
+                e.Cancel = false;
+                return;
+            }
+            if (txtPass.Text != txtPassConfirmacion.Text)
+            {
+                errorCrearUsuario.SetError(txtPassConfirmacion, "La contraseña no coincide");
+                txtPassConfirmacion.BackColor = Color.LightSkyBlue;
+                e.Cancel = false;
+                return;
+            }
+            errorCrearUsuario.Clear();
+            txtPassConfirmacion.BackColor = Color.White;
         }
     }
 }
