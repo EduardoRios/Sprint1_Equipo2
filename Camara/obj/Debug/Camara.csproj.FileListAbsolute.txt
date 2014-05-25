@@ -1,0 +1,13 @@
+C:\Users\Abii\Source\Repos\krisa\Camara\bin\Debug\Krisa.Camara.dll
+C:\Users\Abii\Source\Repos\krisa\Camara\bin\Debug\Krisa.Camara.pdb
+C:\Users\Abii\Source\Repos\krisa\Camara\bin\Debug\EntityFramework.dll
+C:\Users\Abii\Source\Repos\krisa\Camara\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Abii\Source\Repos\krisa\Camara\bin\Debug\Krisa.Datos.dll
+C:\Users\Abii\Source\Repos\krisa\Camara\bin\Debug\Krisa.Recursos.dll
+C:\Users\Abii\Source\Repos\krisa\Camara\bin\Debug\Krisa.Datos.pdb
+C:\Users\Abii\Source\Repos\krisa\Camara\bin\Debug\Krisa.Recursos.pdb
+C:\Users\Abii\Source\Repos\krisa\Camara\bin\Debug\EntityFramework.xml
+C:\Users\Abii\Source\Repos\krisa\Camara\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Abii\Source\Repos\krisa\Camara\obj\Debug\Camara.csprojResolveAssemblyReference.cache
+C:\Users\Abii\Source\Repos\krisa\Camara\obj\Debug\Krisa.Camara.dll
+C:\Users\Abii\Source\Repos\krisa\Camara\obj\Debug\Krisa.Camara.pdb

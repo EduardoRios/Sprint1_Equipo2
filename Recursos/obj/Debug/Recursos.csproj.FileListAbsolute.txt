@@ -1,0 +1,7 @@
+C:\Users\Abii\Source\Repos\krisa\Recursos\bin\Debug\Krisa.Recursos.dll
+C:\Users\Abii\Source\Repos\krisa\Recursos\bin\Debug\Krisa.Recursos.pdb
+C:\Users\Abii\Source\Repos\krisa\Recursos\obj\Debug\Recursos.csprojResolveAssemblyReference.cache
+C:\Users\Abii\Source\Repos\krisa\Recursos\obj\Debug\Krisa.Recursos.resources
+C:\Users\Abii\Source\Repos\krisa\Recursos\obj\Debug\Recursos.csproj.GenerateResource.Cache
+C:\Users\Abii\Source\Repos\krisa\Recursos\obj\Debug\Krisa.Recursos.dll
+C:\Users\Abii\Source\Repos\krisa\Recursos\obj\Debug\Krisa.Recursos.pdb

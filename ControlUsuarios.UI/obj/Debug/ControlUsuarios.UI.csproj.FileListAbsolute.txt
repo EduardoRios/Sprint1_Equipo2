@@ -1,0 +1,5 @@
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios.UI\obj\Debug\ControlUsuarios.UI.csprojResolveAssemblyReference.cache
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios.UI\obj\Debug\Krisa.ControlUsuarios.UI.Properties.Resources.resources
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios.UI\obj\Debug\Krisa.ControlUsuarios.UI.UICrearUsuario.resources
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios.UI\obj\Debug\Krisa.ControlUsuarios.UI.UIModificarUsuario.resources
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios.UI\obj\Debug\ControlUsuarios.UI.csproj.GenerateResource.Cache

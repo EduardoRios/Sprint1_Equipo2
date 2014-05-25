@@ -1,0 +1,15 @@
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios.Test\bin\Debug\Krisa.ControlUsuarios.Test.dll
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios.Test\bin\Debug\Krisa.ControlUsuarios.Test.pdb
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios.Test\bin\Debug\EntityFramework.dll
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios.Test\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios.Test\bin\Debug\Krisa.ControlUsuarios.dll
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios.Test\bin\Debug\Krisa.Datos.dll
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios.Test\bin\Debug\Krisa.Recursos.dll
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios.Test\bin\Debug\Krisa.ControlUsuarios.pdb
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios.Test\bin\Debug\Krisa.Datos.pdb
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios.Test\bin\Debug\Krisa.Recursos.pdb
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios.Test\bin\Debug\EntityFramework.xml
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios.Test\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios.Test\obj\Debug\ControlUsuarios.Test.csprojResolveAssemblyReference.cache
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios.Test\obj\Debug\Krisa.ControlUsuarios.Test.dll
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios.Test\obj\Debug\Krisa.ControlUsuarios.Test.pdb

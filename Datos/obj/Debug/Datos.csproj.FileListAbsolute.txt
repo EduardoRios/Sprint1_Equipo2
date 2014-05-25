@@ -1,0 +1,12 @@
+C:\Users\Abii\Source\Repos\krisa\Datos\bin\Debug\Krisa.Datos.dll.config
+C:\Users\Abii\Source\Repos\krisa\Datos\bin\Debug\Krisa.Datos.dll
+C:\Users\Abii\Source\Repos\krisa\Datos\bin\Debug\Krisa.Datos.pdb
+C:\Users\Abii\Source\Repos\krisa\Datos\bin\Debug\EntityFramework.dll
+C:\Users\Abii\Source\Repos\krisa\Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Abii\Source\Repos\krisa\Datos\bin\Debug\Krisa.Recursos.dll
+C:\Users\Abii\Source\Repos\krisa\Datos\bin\Debug\Krisa.Recursos.pdb
+C:\Users\Abii\Source\Repos\krisa\Datos\bin\Debug\EntityFramework.xml
+C:\Users\Abii\Source\Repos\krisa\Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Abii\Source\Repos\krisa\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+C:\Users\Abii\Source\Repos\krisa\Datos\obj\Debug\Krisa.Datos.dll
+C:\Users\Abii\Source\Repos\krisa\Datos\obj\Debug\Krisa.Datos.pdb

@@ -1,0 +1,16 @@
+C:\Users\Abii\Source\Repos\krisa\Tarjeta\bin\Debug\Krisa.Tarjeta.dll
+C:\Users\Abii\Source\Repos\krisa\Tarjeta\bin\Debug\Krisa.Tarjeta.pdb
+C:\Users\Abii\Source\Repos\krisa\Tarjeta\bin\Debug\EntityFramework.dll
+C:\Users\Abii\Source\Repos\krisa\Tarjeta\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Abii\Source\Repos\krisa\Tarjeta\bin\Debug\Krisa.Datos.dll
+C:\Users\Abii\Source\Repos\krisa\Tarjeta\bin\Debug\Krisa.Recursos.dll
+C:\Users\Abii\Source\Repos\krisa\Tarjeta\bin\Debug\NationalInstruments.DAQmx.dll
+C:\Users\Abii\Source\Repos\krisa\Tarjeta\bin\Debug\NationalInstruments.Common.Native.dll
+C:\Users\Abii\Source\Repos\krisa\Tarjeta\bin\Debug\Krisa.Datos.pdb
+C:\Users\Abii\Source\Repos\krisa\Tarjeta\bin\Debug\Krisa.Recursos.pdb
+C:\Users\Abii\Source\Repos\krisa\Tarjeta\bin\Debug\EntityFramework.xml
+C:\Users\Abii\Source\Repos\krisa\Tarjeta\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Abii\Source\Repos\krisa\Tarjeta\bin\Debug\NationalInstruments.DAQmx.xml
+C:\Users\Abii\Source\Repos\krisa\Tarjeta\obj\Debug\Tarjeta.csprojResolveAssemblyReference.cache
+C:\Users\Abii\Source\Repos\krisa\Tarjeta\obj\Debug\Krisa.Tarjeta.dll
+C:\Users\Abii\Source\Repos\krisa\Tarjeta\obj\Debug\Krisa.Tarjeta.pdb

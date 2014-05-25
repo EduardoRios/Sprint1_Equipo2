@@ -1,0 +1,13 @@
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios\bin\Debug\Krisa.ControlUsuarios.dll
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios\bin\Debug\Krisa.ControlUsuarios.pdb
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios\bin\Debug\EntityFramework.dll
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios\bin\Debug\Krisa.Datos.dll
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios\bin\Debug\Krisa.Recursos.dll
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios\bin\Debug\Krisa.Datos.pdb
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios\bin\Debug\Krisa.Recursos.pdb
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios\bin\Debug\EntityFramework.xml
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios\obj\Debug\ControlUsuarios.csprojResolveAssemblyReference.cache
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios\obj\Debug\Krisa.ControlUsuarios.dll
+C:\Users\Abii\Source\Repos\krisa\ControlUsuarios\obj\Debug\Krisa.ControlUsuarios.pdb
